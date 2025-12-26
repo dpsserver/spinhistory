@@ -9,7 +9,7 @@ from playwright.sync_api import sync_playwright, TimeoutError
 from typing import Optional
 
 
-os.environ["PLAYWRIGHT_BROWSERS_PATH"] = "/home/codespace/.cache/ms-playwright"
+
 
 # Configuration
 PHONE = os.getenv("PHONE")
