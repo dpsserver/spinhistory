@@ -50,4 +50,4 @@ jobs:
           FILE_CHAT_ID: ${{ secrets.FILE_CHAT_ID }}
           PLAYWRIGHT_BROWSERS_PATH: ~/.cache/ms-playwright
         run: |
-          python your_script_name.py
+          python app.py
