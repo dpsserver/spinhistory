@@ -904,7 +904,6 @@ def main():
         "--disable-gpu",
         "--disable-quic",
         "--disable-http3",
-        "--disable-features=NetworkService",
         "--window-size=1920,1080",
         "--mute-audio",
         "--disable-web-security",
