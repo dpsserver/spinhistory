@@ -893,23 +893,16 @@ def main():
             for headless_attempt in [True]:
                 try:
                     browser = p.chromium.launch(
-    headless=headless_attempt,
-    # proxy={
-    #     "server": "socks5://64.227.131.240:1080"
-    # },
+    headless=True,
     args=[
         "--no-sandbox",
-        "--disable-blink-features=AutomationControlled",
         "--disable-dev-shm-usage",
-        "--disable-gpu",
-        "--disable-quic",
-        "--disable-http3",
+        "--disable-blink-features=AutomationControlled",
         "--window-size=1920,1080",
-        "--mute-audio",
-        "--disable-web-security",
-        "--allow-running-insecure-content"
-    ],
-    slow_mo=100)
+        "--mute-audio"
+    ]
+)
+
 
                     break
                 except:
